@@ -9,11 +9,9 @@
 /* Begin PBXBuildFile section */
 		AA2AB6071AAD4C11006644E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2AB6061AAD4C11006644E7 /* main.m */; };
 		AA2AB60A1AAD4C11006644E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2AB6091AAD4C11006644E7 /* AppDelegate.m */; };
-		AA2AB60D1AAD4C11006644E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2AB60C1AAD4C11006644E7 /* ViewController.m */; };
-		AA2AB6101AAD4C11006644E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA2AB60E1AAD4C11006644E7 /* Main.storyboard */; };
 		AA2AB6121AAD4C11006644E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA2AB6111AAD4C11006644E7 /* Images.xcassets */; };
-		AA2AB6151AAD4C11006644E7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA2AB6131AAD4C11006644E7 /* LaunchScreen.xib */; };
 		AA2AB6211AAD4C11006644E7 /* BlocBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2AB6201AAD4C11006644E7 /* BlocBrowserTests.m */; };
+		AA2AB62C1AAD4D5A006644E7 /* WebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2AB62B1AAD4D5A006644E7 /* WebBrowserViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +30,12 @@
 		AA2AB6061AAD4C11006644E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AA2AB6081AAD4C11006644E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AA2AB6091AAD4C11006644E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AA2AB60B1AAD4C11006644E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AA2AB60C1AAD4C11006644E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AA2AB60F1AAD4C11006644E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA2AB6111AAD4C11006644E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AA2AB6141AAD4C11006644E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AA2AB61A1AAD4C11006644E7 /* BlocBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlocBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA2AB61F1AAD4C11006644E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA2AB6201AAD4C11006644E7 /* BlocBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocBrowserTests.m; sourceTree = "<group>"; };
+		AA2AB62A1AAD4D5A006644E7 /* WebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebBrowserViewController.h; sourceTree = "<group>"; };
+		AA2AB62B1AAD4D5A006644E7 /* WebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebBrowserViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +79,9 @@
 			children = (
 				AA2AB6081AAD4C11006644E7 /* AppDelegate.h */,
 				AA2AB6091AAD4C11006644E7 /* AppDelegate.m */,
-				AA2AB60B1AAD4C11006644E7 /* ViewController.h */,
-				AA2AB60C1AAD4C11006644E7 /* ViewController.m */,
-				AA2AB60E1AAD4C11006644E7 /* Main.storyboard */,
+				AA2AB62A1AAD4D5A006644E7 /* WebBrowserViewController.h */,
+				AA2AB62B1AAD4D5A006644E7 /* WebBrowserViewController.m */,
 				AA2AB6111AAD4C11006644E7 /* Images.xcassets */,
-				AA2AB6131AAD4C11006644E7 /* LaunchScreen.xib */,
 				AA2AB6041AAD4C11006644E7 /* Supporting Files */,
 			);
 			path = BlocBrowser;
@@ -199,8 +193,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA2AB6101AAD4C11006644E7 /* Main.storyboard in Resources */,
-				AA2AB6151AAD4C11006644E7 /* LaunchScreen.xib in Resources */,
 				AA2AB6121AAD4C11006644E7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +211,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA2AB60D1AAD4C11006644E7 /* ViewController.m in Sources */,
 				AA2AB60A1AAD4C11006644E7 /* AppDelegate.m in Sources */,
+				AA2AB62C1AAD4D5A006644E7 /* WebBrowserViewController.m in Sources */,
 				AA2AB6071AAD4C11006644E7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,25 +234,6 @@
 			targetProxy = AA2AB61B1AAD4C11006644E7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		AA2AB60E1AAD4C11006644E7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA2AB60F1AAD4C11006644E7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AA2AB6131AAD4C11006644E7 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA2AB6141AAD4C11006644E7 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AA2AB6221AAD4C11006644E7 /* Debug */ = {
