@@ -12,6 +12,7 @@
 		AA2AB6121AAD4C11006644E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA2AB6111AAD4C11006644E7 /* Images.xcassets */; };
 		AA2AB6211AAD4C11006644E7 /* BlocBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2AB6201AAD4C11006644E7 /* BlocBrowserTests.m */; };
 		AA2AB62C1AAD4D5A006644E7 /* WebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2AB62B1AAD4D5A006644E7 /* WebBrowserViewController.m */; };
+		AA56DD811AAFAA2D00D9584A /* AwesomeFloatingToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = AA56DD801AAFAA2D00D9584A /* AwesomeFloatingToolbar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 		AA2AB6201AAD4C11006644E7 /* BlocBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocBrowserTests.m; sourceTree = "<group>"; };
 		AA2AB62A1AAD4D5A006644E7 /* WebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebBrowserViewController.h; sourceTree = "<group>"; };
 		AA2AB62B1AAD4D5A006644E7 /* WebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebBrowserViewController.m; sourceTree = "<group>"; };
+		AA56DD7F1AAFAA2D00D9584A /* AwesomeFloatingToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeFloatingToolbar.h; sourceTree = "<group>"; };
+		AA56DD801AAFAA2D00D9584A /* AwesomeFloatingToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeFloatingToolbar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				AA2AB6091AAD4C11006644E7 /* AppDelegate.m */,
 				AA2AB62A1AAD4D5A006644E7 /* WebBrowserViewController.h */,
 				AA2AB62B1AAD4D5A006644E7 /* WebBrowserViewController.m */,
+				AA56DD7F1AAFAA2D00D9584A /* AwesomeFloatingToolbar.h */,
+				AA56DD801AAFAA2D00D9584A /* AwesomeFloatingToolbar.m */,
 				AA2AB6111AAD4C11006644E7 /* Images.xcassets */,
 				AA2AB6041AAD4C11006644E7 /* Supporting Files */,
 			);
@@ -214,6 +219,7 @@
 				AA2AB60A1AAD4C11006644E7 /* AppDelegate.m in Sources */,
 				AA2AB62C1AAD4D5A006644E7 /* WebBrowserViewController.m in Sources */,
 				AA2AB6071AAD4C11006644E7 /* main.m in Sources */,
+				AA56DD811AAFAA2D00D9584A /* AwesomeFloatingToolbar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +393,7 @@
 				AA2AB6261AAD4C11006644E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA2AB6271AAD4C11006644E7 /* Build configuration list for PBXNativeTarget "BlocBrowserTests" */ = {
 			isa = XCConfigurationList;
@@ -395,6 +402,7 @@
 				AA2AB6291AAD4C11006644E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
