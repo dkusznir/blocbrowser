@@ -32,6 +32,8 @@
     self.webview = [[UIWebView alloc] init];
     self.webview.delegate = self;
     
+    //testing something
+    
     self.textField = [[UITextField alloc] init];
     self.textField.keyboardType = UIKeyboardTypeURL;
     self.textField.returnKeyType = UIReturnKeyDone;
