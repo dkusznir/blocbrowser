@@ -49,6 +49,8 @@
             label.backgroundColor = colorForThisLabel;
             label.textColor = [UIColor whiteColor];
             
+            
+            
             [labelsArray addObject:label];
         }
         
@@ -106,7 +108,9 @@
     UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInView:self];
     UIView *subview = [self hitTest:location withEvent:event];
+
     return (UILabel *)subview;
+
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -134,16 +138,27 @@
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    
     UILabel *label = [self labelFromTouches:touches withEvent:event];
     
-    if (self.currentLabel == label)
+    if ([self.currentLabel isKindOfClass:[UILabel class]])
     {
-        NSLog(@"Label tapped: %@", self.currentLabel.text);
-        
-        if ([self.delegate respondsToSelector:@selector(floatingToolBar:didSelectButtonWithTitle:)])
+        if (self.currentLabel == label)
         {
-            [self.delegate floatingToolBar:self didSelectButtonWithTitle:self.currentLabel.text];
+            NSLog(@"Label tapped: %@", self.currentLabel.text);
+        
+            if ([self.delegate respondsToSelector:@selector(floatingToolBar:didSelectButtonWithTitle:)])
+            {
+                [self.delegate floatingToolBar:self didSelectButtonWithTitle:self.currentLabel.text];
+            }
+
         }
+
+    }
+    
+    else
+    {
+        NSLog(@"This isn't a UILabel.");
     }
     
     self.currentLabel.alpha = 1;

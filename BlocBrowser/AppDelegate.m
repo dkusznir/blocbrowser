@@ -57,6 +57,7 @@
                                           cancelButtonTitle:NSLocalizedString(@"OK, I'm excited!", @"Welcome button title") otherButtonTitles:nil];
     
     [alert show];
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
