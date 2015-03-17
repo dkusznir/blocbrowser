@@ -107,7 +107,8 @@
     //Assign the frames:
     self.textField.frame = CGRectMake(0, 0, width, itemHeight);
     self.webview.frame = CGRectMake(0, CGRectGetMaxY(self.textField.frame), width, browserHeight);
-    
+    self.awesomeToolBar.frame = CGRectMake(20, 20, 280, 60);
+    /*
     if (IS_IPHONE_6)
     {
         if (PORTRAIT)
@@ -185,7 +186,7 @@
             self.awesomeToolBar.frame = CGRectMake(302, 100, 420, 80);
         }
     }
-
+     */
 }
 
 #pragma mark - UITextFieldDelegate
@@ -326,6 +327,41 @@
     {
         [self.webview reload];
     }
+}
+
+- (void) floatingToolBar:(AwesomeFloatingToolbar *)toolbar didTryToPanWithOffset:(CGPoint)offset
+{
+    CGPoint startingPoint = toolbar.frame.origin;
+    CGPoint newPoint = CGPointMake((startingPoint.x + offset.x), (startingPoint.y + offset.y));
+    
+    CGRect potentialNewFrame = CGRectMake(newPoint.x, newPoint.y, CGRectGetWidth(toolbar.frame), CGRectGetHeight(toolbar.frame));
+    
+    if (CGRectContainsRect(self.view.bounds, potentialNewFrame))
+    {
+        toolbar.frame = potentialNewFrame;
+    }
+}
+
+- (void) floatingToolBar:(AwesomeFloatingToolbar *)toolbar didTryToPinchWithScale:(CGFloat)scale
+{
+    NSLog(@"Scale: %f", scale);
+    CGPoint startingPoint = toolbar.frame.origin;
+    CGPoint newPoint = CGPointMake((startingPoint.x * scale), (startingPoint.y * scale));
+    
+    int height = toolbar.frame.size.height * scale;
+    int width = toolbar.frame.size.width * scale;
+
+    CGRect newFrame = CGRectMake(newPoint.x, newPoint.y, width, height);
+    
+    if (CGRectContainsRect(self.view.bounds, newFrame))
+    {
+        toolbar.frame = newFrame;
+        
+        CGAffineTransform pinchTransform = CGAffineTransformScale(self.view.transform, height, width);
+        
+        CGRectApplyAffineTransform(toolbar.frame, pinchTransform);
+    }
+    
 }
 
 - (void) didReceiveMemoryWarning
