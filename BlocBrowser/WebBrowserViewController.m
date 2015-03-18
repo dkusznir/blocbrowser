@@ -342,28 +342,6 @@
     }
 }
 
-- (void) floatingToolBar:(AwesomeFloatingToolbar *)toolbar didTryToPinchWithScale:(CGFloat)scale
-{
-    NSLog(@"Scale: %f", scale);
-    CGPoint startingPoint = toolbar.frame.origin;
-    CGPoint newPoint = CGPointMake((startingPoint.x * scale), (startingPoint.y * scale));
-    
-    int height = toolbar.frame.size.height * scale;
-    int width = toolbar.frame.size.width * scale;
-
-    CGRect newFrame = CGRectMake(newPoint.x, newPoint.y, width, height);
-    
-    if (CGRectContainsRect(self.view.bounds, newFrame))
-    {
-        toolbar.frame = newFrame;
-        
-        CGAffineTransform pinchTransform = CGAffineTransformScale(self.view.transform, height, width);
-        
-        CGRectApplyAffineTransform(toolbar.frame, pinchTransform);
-    }
-    
-}
-
 - (void) didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
