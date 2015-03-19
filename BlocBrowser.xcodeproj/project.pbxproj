@@ -39,7 +39,6 @@
 		AA2AB6201AAD4C11006644E7 /* BlocBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocBrowserTests.m; sourceTree = "<group>"; };
 		AA2AB62A1AAD4D5A006644E7 /* WebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebBrowserViewController.h; sourceTree = "<group>"; };
 		AA2AB62B1AAD4D5A006644E7 /* WebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebBrowserViewController.m; sourceTree = "<group>"; };
-		AA54533A1AB099680035003B /* AwesomeFloatingToolbar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AwesomeFloatingToolbar; path = "../../../../FloatingToolbar Issue/AwesomeFloatingToolbar"; sourceTree = "<group>"; };
 		AA56DD7F1AAFAA2D00D9584A /* AwesomeFloatingToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeFloatingToolbar.h; sourceTree = "<group>"; };
 		AA56DD801AAFAA2D00D9584A /* AwesomeFloatingToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeFloatingToolbar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
